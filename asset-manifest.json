@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/firstProyectReact/static/css/main.e176cbdd.css",
-    "main.js": "/firstProyectReact/static/js/main.c082632b.js",
+    "main.css": "/firstProyectReact/static/css/main.6f32e864.css",
+    "main.js": "/firstProyectReact/static/js/main.22a4b4c7.js",
     "static/js/787.d9aaa131.chunk.js": "/firstProyectReact/static/js/787.d9aaa131.chunk.js",
+    "static/media/fallingMan.jpg": "/firstProyectReact/static/media/fallingMan.77baa1123ef0dfd7a300.jpg",
+    "static/media/neonMan.jpg": "/firstProyectReact/static/media/neonMan.231ad76349bc4b36bb39.jpg",
     "index.html": "/firstProyectReact/index.html",
-    "main.e176cbdd.css.map": "/firstProyectReact/static/css/main.e176cbdd.css.map",
-    "main.c082632b.js.map": "/firstProyectReact/static/js/main.c082632b.js.map",
+    "main.6f32e864.css.map": "/firstProyectReact/static/css/main.6f32e864.css.map",
+    "main.22a4b4c7.js.map": "/firstProyectReact/static/js/main.22a4b4c7.js.map",
     "787.d9aaa131.chunk.js.map": "/firstProyectReact/static/js/787.d9aaa131.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e176cbdd.css",
-    "static/js/main.c082632b.js"
+    "static/css/main.6f32e864.css",
+    "static/js/main.22a4b4c7.js"
   ]
 }
