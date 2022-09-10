@@ -1,17 +1,31 @@
 {
   "files": {
-    "main.css": "/firstProyectReact/static/css/main.6f32e864.css",
-    "main.js": "/firstProyectReact/static/js/main.22a4b4c7.js",
+    "main.css": "/firstProyectReact/static/css/main.930872f3.css",
+    "main.js": "/firstProyectReact/static/js/main.def6f0c3.js",
     "static/js/787.d9aaa131.chunk.js": "/firstProyectReact/static/js/787.d9aaa131.chunk.js",
     "static/media/fallingMan.jpg": "/firstProyectReact/static/media/fallingMan.77baa1123ef0dfd7a300.jpg",
+    "static/media/cristalesRotos.jpg": "/firstProyectReact/static/media/cristalesRotos.4ee4a294b4363e3badd5.jpg",
+    "static/media/girlBlack.jpg": "/firstProyectReact/static/media/girlBlack.6e50ffe54d1504b51274.jpg",
+    "static/media/fishBlack.jpg": "/firstProyectReact/static/media/fishBlack.535a828b9af4ac0f8a42.jpg",
+    "static/media/roseBlack.jpg": "/firstProyectReact/static/media/roseBlack.8cf8995750f7d6284a2f.jpg",
+    "static/media/chessBlack.jpg": "/firstProyectReact/static/media/chessBlack.ee295c4b41ea547bb01a.jpg",
+    "static/media/womanBlack.jpg": "/firstProyectReact/static/media/womanBlack.a0c8070f568ab8e53052.jpg",
+    "static/media/woman2Black.jpg": "/firstProyectReact/static/media/woman2Black.58b3d922837a7b4feed8.jpg",
+    "static/media/logoSmart.png": "/firstProyectReact/static/media/logoSmart.f937e797e86347b3028b.png",
+    "static/media/coffeeBlack.jpg": "/firstProyectReact/static/media/coffeeBlack.f992488fbeea3cf795e5.jpg",
+    "static/media/timeSpaceBlack.jpg": "/firstProyectReact/static/media/timeSpaceBlack.f3bcaa934ca0f130a7ce.jpg",
     "static/media/neonMan.jpg": "/firstProyectReact/static/media/neonMan.231ad76349bc4b36bb39.jpg",
+    "static/media/lightBlack.jpg": "/firstProyectReact/static/media/lightBlack.a4c914c74b6873a2a1d5.jpg",
+    "static/media/cisneNegro.jpg": "/firstProyectReact/static/media/cisneNegro.755423e6e425c9960871.jpg",
+    "static/media/manBlack.jpg": "/firstProyectReact/static/media/manBlack.d6f46dbcdde76f4776fe.jpg",
+    "static/media/candleBlack.jpg": "/firstProyectReact/static/media/candleBlack.0eaa0123353007ae677d.jpg",
     "index.html": "/firstProyectReact/index.html",
-    "main.6f32e864.css.map": "/firstProyectReact/static/css/main.6f32e864.css.map",
-    "main.22a4b4c7.js.map": "/firstProyectReact/static/js/main.22a4b4c7.js.map",
+    "main.930872f3.css.map": "/firstProyectReact/static/css/main.930872f3.css.map",
+    "main.def6f0c3.js.map": "/firstProyectReact/static/js/main.def6f0c3.js.map",
     "787.d9aaa131.chunk.js.map": "/firstProyectReact/static/js/787.d9aaa131.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f32e864.css",
-    "static/js/main.22a4b4c7.js"
+    "static/css/main.930872f3.css",
+    "static/js/main.def6f0c3.js"
   ]
 }
