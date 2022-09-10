@@ -1,18 +1,20 @@
 import imgLogo from "./assets/logoSmart.png";
 import newLogo from "./assets/new.png";
 import outletLogo from "./assets/outlet.png";
+import { NavLink } from "react-router-dom";
+
 const CartWidget = () => {
   return (
     <div className="cartWidgetContainer">
-      <a href="https://example.com">
+      <NavLink to='products/top'>
         <img src={imgLogo} alt="" />
-      </a>
-      <a href="https://example.com">
+      </NavLink>
+      <NavLink to='products/normal'>
         <img src={newLogo} alt="" />
-      </a>
-      <a href="https://example.com">
+      </NavLink>
+      <NavLink to='products/'>
         <img src={outletLogo} alt="" />
-      </a>
+      </NavLink>
     </div>
   );
 };

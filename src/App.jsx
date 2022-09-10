@@ -1,19 +1,22 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CardListContainer from "./components/CardListContainer";
-//import ItemCount from "./components/itemCount";
-import ItemListContainer from "./components/ItemListContainer";
+import ItemDetailContainer from "./components/ItemDetailContainer";
+import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
+// import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <div className="App">
-        <NavBar />
-        <ItemListContainer greeting={"Greetings"} />
-        <div className="mainContainer">
-          <CardListContainer />
-        </div>
-      </div>
-    </>
+    <BrowserRouter>
+      <NavBar />
+      <Routes>
+      <Route path="/" element={<CardListContainer /> }/>
+      <Route path="/contacto" element={<h1>pagina de contacto</h1>}/>
+      <Route path="/products/:oldNewlist" element={<CardListContainer/>}/>
+      <Route path="/item/:itemId" element={<ItemDetailContainer/>}/>
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
 export default App;

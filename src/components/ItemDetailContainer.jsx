@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import CardList from "./CardList";
 import fallingMan from "./assets/fallingMan.jpg";
 import neonMan from "./assets/neonMan.jpg";
 import womanBLack from "./assets/womanBlack.jpg";
@@ -16,15 +15,17 @@ import woman2 from "./assets/woman2Black.jpg";
 import manBlack from "./assets/manBlack.jpg";
 import lightBlack from "./assets/lightBlack.jpg";
 import { useParams } from "react-router-dom";
+import ItemDetail from "./ItemDetail";
 
-const CardListContainer = () => {
+const ItemDetailContainer = () => {
   const [item, setItem] = useState([]);
-  const { oldNewlist } = useParams();
+  const { itemId } = useParams();
   const infoLorem = `From my mother's sleep I fell into the State,
 And I hunched in its belly till my wet fur froze.
 Six miles from earth, loosed from its dream of life,
 I woke to black flak and the nightmare fighters.
 When I died they washed me out of the turret with a hose.`;
+
   useEffect(() => {
     let dataSimulation = [
       {
@@ -132,25 +133,15 @@ When I died they washed me out of the turret with a hose.`;
         resolve(dataSimulation);
       }, 500);
     }).then((data) => {
-      if (oldNewlist) {
-        setItem(data.filter((picture) => picture.category === oldNewlist));
-      } else {
-        setItem(data);
+      if (itemId) {
+        setItem(data.find((id) => id.id === parseInt(itemId)));
       }
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [oldNewlist]);
-  return (
-    <>
-      <div className="App">
-        <div className="mainContainer">
-          <div className="cardListContainer ">
-            {item.length ? <CardList Cards={item} /> : <h2>Cargando...</h2>}
-          </div>
-        </div>
-      </div>
-    </>
-  );
-};
+  }, [itemId]);
 
-export default CardListContainer;
+  return(  
+  <ItemDetail detail={item} />
+  )};
+
+export default ItemDetailContainer;
