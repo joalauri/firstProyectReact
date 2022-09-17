@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import ItemCount from './ItemCount'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from 'react-router-dom';
@@ -18,7 +17,6 @@ const Card= ({id, title, img, info}) => {
      data-aos-duration="3000">
         <img src={img} alt="" />
         <h2>{title}</h2>
-        <ItemCount/>
         <button type="button" className="addToCart" ><Link to={`/item/${id}`}> More...</Link></button>
         
       </div>

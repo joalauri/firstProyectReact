@@ -1,8 +1,7 @@
 import { useState } from "react";
 
 
-
-const ItemCount = () => {
+const ItemCount = (onAdd) => {
   const [addCount, setAddCount] = useState(0);
   const restToAdd = () => {
     addCount>=1? setAddCount(addCount - 1): setAddCount(addCount - 0)
@@ -19,7 +18,7 @@ const ItemCount = () => {
       <button type="button" onClick={addToAdd} >+</button>    
     </div >
     <div className="contadorContainer">
-    <button type="button">¡Comprar!</button> 
+    <button type="button" disabled={addCount<=0} onClick={ () => onAdd(addCount) }>¡Comprar!</button> 
     </div>
     
   </div>
