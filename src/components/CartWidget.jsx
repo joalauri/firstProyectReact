@@ -12,7 +12,7 @@ const CartWidget = () => {
       <NavLink to='products/normal'>
         <img src={newLogo} alt="" />
       </NavLink>
-      <NavLink to='products/'>
+      <NavLink to='cart/'>
         <img src={outletLogo} alt="" />
       </NavLink>
     </div>

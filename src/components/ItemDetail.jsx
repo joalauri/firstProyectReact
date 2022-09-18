@@ -7,12 +7,11 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 const ItemDetail = ({ detail }) => {
 
-const {addProduct} = useCartContext();
 const [goToCart, setGoToCart] = useState(false)
+const {addProduct} = useCartContext();
 
 const onAdd = (quantity) =>{
   setGoToCart(true)
-  console.log(`compraste ${quantity}`)
   addProduct(detail, quantity)
 }
 
@@ -25,7 +24,8 @@ const onAdd = (quantity) =>{
     <div className="individualCard" id={detail.id} data-aos="fade-up">
       <img src={detail.img} alt="" />
       <h2>{detail.title}</h2>
-      <h4>{detail.info}</h4>  
+      <h4>{detail.info}</h4> 
+      <h4>Amount per unit ${detail.price}</h4> 
       {
         goToCart
           ? <Link to={'/cart'}>Terminar Compra</Link>

@@ -33,6 +33,7 @@ When I died they washed me out of the turret with a hose.`;
         title: "Chess board",
         info: infoLorem,
         category: "top",
+        price: 5000,
       },
       {
         img: girlBlack,
@@ -40,6 +41,7 @@ When I died they washed me out of the turret with a hose.`;
         title: "Girl",
         info: infoLorem,
         category: "top",
+        price: 5000,
       },
       {
         img: womanBLack,
@@ -47,6 +49,7 @@ When I died they washed me out of the turret with a hose.`;
         title: "Woman",
         info: infoLorem,
         category: "normal",
+        price: 2175
       },
       {
         img: candle,
@@ -54,6 +57,7 @@ When I died they washed me out of the turret with a hose.`;
         title: "Middle Candle",
         info: infoLorem,
         category: "top",
+        price: 5000,
       },
       {
         img: neonMan,
@@ -61,6 +65,7 @@ When I died they washed me out of the turret with a hose.`;
         title: "Movile",
         info: infoLorem,
         category: "normal",
+        price: 2175
       },
       {
         img: fishBlack,
@@ -68,6 +73,7 @@ When I died they washed me out of the turret with a hose.`;
         title: "Colorfull Fish",
         info: infoLorem,
         category: "normal",
+        price: 2175
       },
       {
         img: cisneNegro,
@@ -75,14 +81,23 @@ When I died they washed me out of the turret with a hose.`;
         title: "Black Swan",
         info: infoLorem,
         category: "top",
+        price: 5000
       },
-      { img: coffee, id: 8, title: "Coffee", info: infoLorem, category: "top" },
+      {
+        img: coffee,
+        id: 8,
+        title: "Coffee",
+        info: infoLorem,
+        category: "top",
+        price: 5000,
+      },
       {
         img: fallingMan,
         id: 9,
         title: "Fallin into",
         info: infoLorem,
         category: "normal",
+        price: 2175
       },
       {
         img: cristalesRotos,
@@ -90,6 +105,7 @@ When I died they washed me out of the turret with a hose.`;
         title: "Broken Glass",
         info: infoLorem,
         category: "normal",
+        price: 2175
       },
       {
         img: rose,
@@ -97,6 +113,7 @@ When I died they washed me out of the turret with a hose.`;
         title: "With Rose",
         info: infoLorem,
         category: "top",
+        price: 5000,
       },
       {
         img: timeSpace,
@@ -104,6 +121,7 @@ When I died they washed me out of the turret with a hose.`;
         title: "Little Lights",
         info: infoLorem,
         category: "normal",
+        price: 2175
       },
       {
         img: woman2,
@@ -111,6 +129,7 @@ When I died they washed me out of the turret with a hose.`;
         title: "She",
         info: infoLorem,
         category: "normal",
+        price: 2175
       },
       {
         img: manBlack,
@@ -118,6 +137,7 @@ When I died they washed me out of the turret with a hose.`;
         title: "He",
         info: infoLorem,
         category: "normal",
+        price: 2175
       },
       {
         img: lightBlack,
@@ -125,6 +145,7 @@ When I died they washed me out of the turret with a hose.`;
         title: "Light in dark",
         info: infoLorem,
         category: "top",
+        price: 5000,
       },
     ];
     new Promise((resolve) => {
