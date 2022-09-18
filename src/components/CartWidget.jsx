@@ -2,8 +2,10 @@ import imgLogo from "./assets/logoSmart.png";
 import newLogo from "./assets/new.png";
 import outletLogo from "./assets/outlet.png";
 import { NavLink } from "react-router-dom";
+import { useCartContext } from "../context/CartContext";
 
-const CartWidget = () => {
+export const CartWidget = () => {
+  const {totalProducts} = useCartContext();
   return (
     <div className="cartWidgetContainer">
       <NavLink to='products/top'>
@@ -13,8 +15,12 @@ const CartWidget = () => {
         <img src={newLogo} alt="" />
       </NavLink>
       <NavLink to='cart/'>
-        <img src={outletLogo} alt="" />
+      <div className="cartlogoNumber">
+      <img src={outletLogo} alt="" />
+      <p>{totalProducts() || ''}</p>
+        </div>
       </NavLink>
+
     </div>
   );
 };

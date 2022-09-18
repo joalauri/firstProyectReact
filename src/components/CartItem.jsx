@@ -7,11 +7,11 @@ const CartItem = ({ product }) => {
     <div className="cartItemContainer">
       <img src={product.img} alt="" />
       <div className="cartItem">
-        <h4>{product.title}</h4>
-        <h5>{product.quantity}</h5>
-        <h5>{product.price}</h5>
-        <h5> {product.quantity * product.price} </h5>
-        <button onClick={() => removeProduct(product.id)}>Kick product</button>
+        <h4>Title: {product.title}</h4>
+        <h5>Units: {product.quantity}</h5>
+        <h5>Price per unit: ${product.price}</h5>
+        <h5>Total: {product.quantity * product.price} </h5>
+        <button className="buttonCart" onClick={() => removeProduct(product.id)}>Remove product</button>
       </div>
     </div>
   );

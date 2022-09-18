@@ -27,14 +27,11 @@ console.log(cart + "cart en cartContext")
     setCart(cart.filter((product) => product.id !== id));
 
   const totalPrice = () => {
-    return cart.reduce((prev, act) => prev + act.quantity * act.totalPrice, 0);
+    return cart.reduce((prev, act) => prev + act.quantity * act.price, 0);
   };
 
-  const totalProducts = () =>
-    cart.reduce(
-      (acumulador, productoActual) => acumulador + productoActual.quantity,
-      0
-    );
+  const totalProducts = () => cart.reduce((contador, producto) => contador + producto.quantity,0);
+    
 
   return (
     <CartContext.Provider
