@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 
-const ItemCount = (onAdd) => {
+const ItemCount = ({onAdd}) => {
   const [addCount, setAddCount] = useState(0);
   const restToAdd = () => {
     addCount>=1? setAddCount(addCount - 1): setAddCount(addCount - 0)

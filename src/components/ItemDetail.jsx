@@ -2,18 +2,18 @@ import React, { useEffect } from "react";
 import ItemCount from "./ItemCount";
 import AOS from "aos";
 import "aos/dist/aos.css";
-// import { useCartContext } from "../context/CartContext";
+import { useCartContext } from "../context/CartContext";
 import { useState } from "react";
-
+import { Link } from "react-router-dom";
 const ItemDetail = ({ detail }) => {
 
-// const {addProduct} = useCartContext();
+const {addProduct} = useCartContext();
 const [goToCart, setGoToCart] = useState(false)
 
 const onAdd = (quantity) =>{
   setGoToCart(true)
   console.log(`compraste ${quantity}`)
-  // addProduct(detail, quantity)
+  addProduct(detail, quantity)
 }
 
   useEffect(() => {
@@ -28,7 +28,7 @@ const onAdd = (quantity) =>{
       <h4>{detail.info}</h4>  
       {
         goToCart
-          ? <h3>terminar Compra</h3>
+          ? <Link to={'/cart'}>Terminar Compra</Link>
           : <ItemCount onAdd={onAdd}/>
       }
     </div>
