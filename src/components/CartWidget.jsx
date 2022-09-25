@@ -20,7 +20,6 @@ export const CartWidget = () => {
       <p>{totalProducts() || ''}</p>
         </div>
       </NavLink>
-
     </div>
   );
 };
