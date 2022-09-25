@@ -10,6 +10,7 @@
     "aos": "^2.3.4",
     "dotenv": "^16.0.2",
     "firebase": "^9.10.0",
+    "npm": "^8.19.2",
     "react": "^18.2.0",
     "react-animation-on-scroll": "^5.1.0",
     "react-dom": "^18.2.0",
