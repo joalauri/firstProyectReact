@@ -11,6 +11,7 @@ const CardList = ({ Cards }) => {
           title={item.title}
           img={item.img}
           info={item.info}
+          stock={item.stock}
         />
       ))}
     </>

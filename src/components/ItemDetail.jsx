@@ -26,10 +26,11 @@ const onAdd = (quantity) =>{
       <h2>{detail.title}</h2>
       <h4>{detail.info}</h4> 
       <h4>Amount per unit ${detail.price}</h4> 
+      <h3>stock: {detail.stock > 0 ? detail.stock : "Sold out"}</h3>
       {
         goToCart
-          ? <Link to={'/cart'}>Terminar Compra</Link>
-          : <ItemCount onAdd={onAdd}/>
+          ? <Link to={'/cart'}>finish the purchase</Link>
+          : <ItemCount onAdd={onAdd} maxQuantity={detail.stock}/>
       }
     </div>
   );

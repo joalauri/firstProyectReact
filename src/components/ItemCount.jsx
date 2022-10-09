@@ -1,13 +1,13 @@
 import { useState } from "react";
 
 
-const ItemCount = ({onAdd}) => {
+const ItemCount = ({onAdd,maxQuantity}) => {
   const [addCount, setAddCount] = useState(0);
   const restToAdd = () => {
     addCount>=1? setAddCount(addCount - 1): setAddCount(addCount - 0)
   };
   const addToAdd = () => {
-    setAddCount(addCount + 1);
+    addCount < maxQuantity && setAddCount(addCount + 1);
   };
   
   return (
@@ -18,7 +18,7 @@ const ItemCount = ({onAdd}) => {
       <button type="button" onClick={addToAdd} >+</button>    
     </div >
     <div className="contadorContainer">
-    <button type="button" disabled={addCount<=0} onClick={ () => onAdd(addCount) }>¡Comprar!</button> 
+    <button type="button" disabled={addCount<=0} onClick={ () => onAdd(addCount) }>¡Comprar!</button>
     </div>
     
   </div>

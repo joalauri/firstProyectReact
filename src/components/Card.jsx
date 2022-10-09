@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from 'react-router-dom';
 
-const Card= ({id, title, img, info}) => {
+const Card= ({id, title, img, info,stock}) => {
 
   useEffect(() => {
     AOS.init();

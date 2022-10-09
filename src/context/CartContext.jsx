@@ -1,5 +1,6 @@
 import React, { useState, useContext } from "react";
 // import ItemCount from "../components/ItemCount";
+import { updateStock } from "../firebase/config";
 const CartContext = React.createContext([]);
 export const useCartContext = () => useContext(CartContext);
 
@@ -7,7 +8,7 @@ const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
   const addProduct = (detail, quantity) => {
     let newCart;
-    let product = cart.find(product => product.id === detail.id);
+    let product = cart.find((product) => product.id === detail.id);
     if (product) {
       product.quantity += quantity;
       newCart = [...cart];
@@ -17,7 +18,7 @@ const CartProvider = ({ children }) => {
     }
     setCart(newCart);
   };
-console.log(cart + "cart en cartContext")
+  console.log(cart + "cart en cartContext");
   const clearCart = () => setCart([]);
 
   const isInCart = (id) =>
@@ -30,8 +31,12 @@ console.log(cart + "cart en cartContext")
     return cart.reduce((prev, act) => prev + act.quantity * act.price, 0);
   };
 
-  const totalProducts = () => cart.reduce((contador, producto) => contador + producto.quantity,0);
-    
+  const totalProducts = () =>
+    cart.reduce((contador, producto) => contador + producto.quantity, 0);
+
+  const finalizarCompra = () =>{
+    updateStock(cart);
+  }
 
   return (
     <CartContext.Provider
@@ -42,7 +47,8 @@ console.log(cart + "cart en cartContext")
         addProduct,
         totalPrice,
         totalProducts,
-        cart
+        cart,
+        finalizarCompra
       }}
     >
       {children}
