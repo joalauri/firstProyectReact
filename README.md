@@ -1,4 +1,5 @@
-Programa de fin de curso de CoderHouse.
+                     CoderHouse.
+                     
 Tipo de programa: E-commerce. 
 
                     Descripción general
